@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ravish Thakur | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('B_jAf8WBGtS1ssMx9')
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar">
+            <div class="navbar-container">
+               
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <span class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="ravish.png" alt="Ravish Thakur" class="hero-img">
+            <h1>Ravish Thakur</h1>
+            <p>Aspiring Engineer & Developer</p>
+            <!-- Social Links Section -->
+            <div class="social-links">
+            <a href="ravishthakur012@gmail.com" class="social-link" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/ravish0" target="_blank" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ravish-thakur-217a93276/" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+            <a href="#about" class="btn learn-more">Learn More <i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="ravish.png" alt="Ravish Thakur" class="profile-img">
+                <p>I'm a Web developer and have experience in programming languages like Java, C, HTML, CSS, and javascript. I am passionate about developing user-friendly applications and exploring emerging technologies.</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-icons">
+                <div><div class="skill">
+                    <i class="fab fa-java"></i>
+                    <p>Java (Advanced)</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-c"></i>
+                    <p>C (Intermediate)</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL (Advanced)</p>
+                </div></div>
+                <div>
+                <div class="skill">
+                    <i class="fab fa-aws"></i>
+                    <p>AWS (Intermediate)</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git & GitHub (Advanced)</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-android"></i>
+                    <p>Kotlin (Intermediate)</p>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="BMIcalculator.jpg" alt="BMI Calculator App" class="project-img">
+                    <h3>BMI Calculator App</h3>
+                    <p>Simple Web Site that help to calculates BMI using weight and height. Built with Java and XML.</p>
+                    <a href="https://ravish0.github.io/BMI-Calculator/"  class="view-project-btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="Simon game.jpg" alt="Simon game" class="project-img">
+                    <h3>Simon game</h3>
+                    <p>A game In which user can test their memories with real-time win detection. Built with Java and XML.</p>
+                    <a href="https://ravish0.github.io/game/"  class="view-project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" id="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="navbar">
+        <p>&copy; 2024 Ravish Thakur. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
