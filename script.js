@@ -11,7 +11,7 @@ function toggleMenu() {
      btn.value = 'Sending...';
   
      const serviceID = 'service_5ohy52r';
-     const templateID = 'service_5ohy52r';
+     const templateID = 'template_9amtvy4';
   
      emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
